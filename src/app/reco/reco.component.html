@@ -1,0 +1,25 @@
+<div *ngIf="data">
+    <h3 class="toplist"> Top Rated Products </h3>
+    <div *ngIf="data.results.length>1">
+        <owl-carousel-o [options]="customOptions">
+            <ng-container *ngFor="let movie of data.results">
+            <ng-template carouselSlide [id]="movie.id">
+                <img src="https://image.tmdb.org/t/p/w185/{{movie.poster_path}}" style="max-width: 190px">
+            </ng-template>
+            </ng-container>
+        </owl-carousel-o>
+    </div>
+</div>
+
+<div *ngIf="data_2">
+    <h3> Upcoming Products </h3>
+    <div *ngIf="data_2.results.length>1" class="upcominglist">
+        <owl-carousel-o [options]="customOptions">
+            <ng-container *ngFor="let movie of data_2.results">
+            <ng-template carouselSlide [id]="movie.id" >
+                <img src="https://image.tmdb.org/t/p/w185/{{movie.poster_path}}" style="max-width: 185px">
+            </ng-template>
+            </ng-container>
+        </owl-carousel-o>
+    </div>
+</div>

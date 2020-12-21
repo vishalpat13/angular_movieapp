@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
+
+body {
+    background-color: black;
+    font-size:32px;
+}
+
+.upcominglist{
+    margin-bottom: 4rem;
+}
+
+.toplist{
+    margin-top: 4rem;
+}
+
+
+
+
+  img {
+    padding: 40px;
+    background: #fff;
+    max-width: 360px;
+    border-radius: 50px;
+    margin: 60px auto;
+    box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+  }
